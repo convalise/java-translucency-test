@@ -10,5 +10,8 @@ The latest version of JRE/JDK can be found [here](http://www.oracle.com/technetw
 
 ## Changelog
 
+**version 1.0.1** (April 17, 2016)
+- Migration to GitHub
+
 **version 1.0** (September 19, 2011)
 - Initial release

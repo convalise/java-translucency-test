@@ -31,7 +31,7 @@
                   <Component id="CB_ReverseColors" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="P_StartColor1" alignment="0" max="32767" attributes="2"/>
                   <Component id="P_StartColor" alignment="0" max="32767" attributes="2"/>
-                  <Component id="CB_Direction" alignment="0" pref="228" max="32767" attributes="2"/>
+                  <Component id="CB_Direction" alignment="0" pref="245" max="32767" attributes="2"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -52,7 +52,7 @@
               <Component id="CB_PaintBorder" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="CB_DrawImage" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="12" max="32767" attributes="0"/>
+              <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,17 +73,17 @@
               <Group type="102" attributes="0">
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="L_StartG" alignment="1" min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="L_StartB" alignment="1" min="-2" pref="11" max="-2" attributes="0"/>
-                      <Component id="L_StartA" alignment="1" min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="L_StartR" min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="L_StartG" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="L_StartB" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="L_StartA" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="L_StartR" min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="S_StartR" alignment="1" pref="133" max="32767" attributes="0"/>
-                      <Component id="S_StartB" pref="133" max="32767" attributes="0"/>
-                      <Component id="S_StartG" pref="133" max="32767" attributes="0"/>
-                      <Component id="S_StartA" pref="133" max="32767" attributes="0"/>
+                      <Component id="S_StartR" alignment="1" pref="142" max="32767" attributes="0"/>
+                      <Component id="S_StartB" pref="142" max="32767" attributes="0"/>
+                      <Component id="S_StartG" pref="142" max="32767" attributes="0"/>
+                      <Component id="S_StartA" pref="142" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -166,44 +166,60 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JSlider" name="S_StartR">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_StartRStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_StartG">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_StartGStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_StartB">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_StartBStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_StartA">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_StartAStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_StartR">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_StartRActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_StartG">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_StartGActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_StartB">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_StartBActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_StartA">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_StartAActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -223,21 +239,21 @@
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="L_EndR" min="-2" pref="11" max="-2" attributes="0"/>
+                          <Component id="L_EndR" min="-2" pref="20" max="-2" attributes="0"/>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
-                          <Component id="S_EndR" pref="133" max="32767" attributes="0"/>
+                          <Component id="S_EndR" pref="141" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="L_EndG" alignment="1" min="-2" pref="12" max="-2" attributes="0"/>
-                              <Component id="L_EndB" alignment="1" min="-2" pref="11" max="-2" attributes="0"/>
-                              <Component id="L_EndA" alignment="1" min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="L_EndG" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="L_EndB" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="L_EndA" alignment="1" min="-2" pref="20" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="S_EndG" alignment="0" pref="132" max="32767" attributes="0"/>
-                              <Component id="S_EndB" alignment="0" pref="132" max="32767" attributes="0"/>
-                              <Component id="S_EndA" alignment="0" pref="132" max="32767" attributes="0"/>
+                              <Component id="S_EndG" alignment="0" pref="141" max="32767" attributes="0"/>
+                              <Component id="S_EndB" alignment="0" pref="141" max="32767" attributes="0"/>
+                              <Component id="S_EndA" alignment="0" pref="141" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -322,44 +338,60 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JSlider" name="S_EndR">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_EndRStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_EndG">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_EndGStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_EndB">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_EndBStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JSlider" name="S_EndA">
+          <Properties>
+            <Property name="maximum" type="int" value="255"/>
+            <Property name="value" type="int" value="0"/>
+          </Properties>
           <Events>
             <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="S_EndAStateChanged"/>
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_EndR">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_EndRActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_EndG">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_EndGActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_EndB">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_EndBActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="TF_EndA">
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TF_EndAActionPerformed"/>
-          </Events>
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
@@ -370,7 +402,7 @@
             <StringItem index="0" value="Horizontal"/>
             <StringItem index="1" value="Vertical"/>
             <StringItem index="2" value="Diagonal"/>
-            <StringItem index="3" value="Diagonal Inverse"/>
+            <StringItem index="3" value="Anti-Diagonal"/>
           </StringArray>
         </Property>
         <Property name="selectedIndex" type="int" value="1"/>
@@ -401,7 +433,7 @@
     </Component>
     <Component class="javax.swing.JCheckBox" name="CB_DrawImage">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Draw example image"/>
+        <Property name="text" type="java.lang.String" value="Draw splash image"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CB_DrawImageActionPerformed"/>
